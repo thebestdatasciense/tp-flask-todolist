@@ -1,4 +1,4 @@
-/* ===== STYLE GLOBAL ===== */
+
 body {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@ body {
     color: #333;
 }
 
-/* Conteneur principal */
+
 .container {
     width: 90%;
     max-width: 700px;
@@ -18,14 +18,14 @@ body {
     box-shadow: 0 10px 25px rgba(0,0,0,0.05);
 }
 
-/* Titres */
+
 h1, h2 {
     text-align: center;
     color: #6a5acd; /* violet pastel */
     margin-bottom: 20px;
 }
 
-/* ===== FORMULAIRE ===== */
+
 form {
     display: flex;
     flex-direction: column;
@@ -75,13 +75,13 @@ ul {
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
-/* Titre tâche */
+
 .task-title {
     font-size: 18px;
     font-weight: 500;
 }
 
-/* Liens Modifier / Supprimer */
+
 .task a {
     text-decoration: none;
     padding: 7px 12px;
@@ -90,9 +90,9 @@ ul {
     margin-left: 10px;
 }
 
-/* Bouton modifier */
+
 .edit-btn {
-    background: #81ecec; /* bleu pastel */
+    background: #81ecec; /* bleu */
     color: #076969;
 }
 
@@ -110,7 +110,7 @@ ul {
     background: #ff7675;
 }
 
-/* ===== COULEURS DES PRIORITÉS ===== */
+
 
 /* basse = vert pastel */
 .priority-basse {
@@ -131,7 +131,6 @@ ul {
     font-weight: bold;
 }
 
-/* ===== FLASH MESSAGES ===== */
 
 .flash {
     padding: 12px;
@@ -141,3 +140,4 @@ ul {
     margin-bottom: 15px;
     text-align: center;
 }
+
