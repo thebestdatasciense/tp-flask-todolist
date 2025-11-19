@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Modifier la tâche</h2>
+
+<form action="{{ url_for('edit', task_id=task_id) }}" method="post">
+
+    <label>Titre :</label>
+    <input type="text" name="title" value="{{ task.title }}" required>
+
+    <label>Priorité :</label>
+    <select name="priority">
+        <option value="basse"   {% if task.priority == "basse" %}selected{% endif %}>Basse</option>
+        <option value="normale" {% if task.priority == "normale" %}selected{% endif %}>Normale</option>
+        <option value="haute"   {% if task.priority == "haute" %}selected{% endif %}>Haute</option>
+    </select>
+
+    <button type="submit">Enregistrer</button>
+</form>
+
+<a href="{{ url_for('home') }}">Retour</a>
+{% endblock %}

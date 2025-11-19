@@ -1,0 +1,143 @@
+/* ===== STYLE GLOBAL ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: #f7f5ff; /* violet pastel très doux */
+    color: #333;
+}
+
+/* Conteneur principal */
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* Titres */
+h1, h2 {
+    text-align: center;
+    color: #6a5acd; /* violet pastel */
+    margin-bottom: 20px;
+}
+
+/* ===== FORMULAIRE ===== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"],
+select {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #d9d5f7;
+    font-size: 16px;
+    background: #faf8ff;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 15px;
+    background: #a29bfe; /* violet pastel */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #6c5ce7;
+}
+
+/* ===== LISTE DES TACHES ===== */
+
+ul {
+    padding: 0;
+}
+
+.task {
+    list-style: none;
+    background: white;
+    padding: 15px;
+    margin: 12px 0;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* Titre tâche */
+.task-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Liens Modifier / Supprimer */
+.task a {
+    text-decoration: none;
+    padding: 7px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+/* Bouton modifier */
+.edit-btn {
+    background: #81ecec; /* bleu pastel */
+    color: #076969;
+}
+
+.edit-btn:hover {
+    background: #00cec9;
+}
+
+/* Bouton supprimer */
+.delete-btn {
+    background: #fab1a0; /* orange pastel */
+    color: #8b3d00;
+}
+
+.delete-btn:hover {
+    background: #ff7675;
+}
+
+/* ===== COULEURS DES PRIORITÉS ===== */
+
+/* basse = vert pastel */
+.priority-basse {
+    border-left: 7px solid #b2f7b2;
+    background: #f0fff0;
+}
+
+/* normale = bleu pastel */
+.priority-normale {
+    border-left: 7px solid #aee1ff;
+    background: #f5faff;
+}
+
+/* haute = rose pastel */
+.priority-haute {
+    border-left: 7px solid #f7b5d1;
+    background: #fff5f9;
+    font-weight: bold;
+}
+
+/* ===== FLASH MESSAGES ===== */
+
+.flash {
+    padding: 12px;
+    background: #ffeaa7;
+    color: #6d4e00;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
